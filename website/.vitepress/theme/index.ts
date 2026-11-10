@@ -10,6 +10,7 @@ import { DocumentTables } from './table-filter.ts'
 import './media-viewer.css'
 import './code-group.css'
 import './page-markdown-actions.css'
+import './riotwork.css'
 import './table-filter.css'
 
 export default {

@@ -1,12 +1,14 @@
-# DeepSeek Harness
+# RIOTWORK — SKANG AND ROLL. PATCH IT.
 
 [English](README.md) | 中文
 
-DeepSeek Harness（`dsh`）是由 [DeepSeek AI](https://deepseek.com) 开发的开源 agent harness（智能体框架）。
+**RIOTWORK** 是一个独立的朋克摇滚 AI Agent 工程环境：少一点仪表盘表演，多交付经过验证的软件补丁。
 
-它构建于**一切皆插件**的架构之上，由 [Cordis](https://github.com/cordiverse/cordis) 驱动，其设计参见论文 [_A Programming Paradigm for Spatiotemporal Composability_](https://arxiv.org/abs/2608.25512)。
+**SKANG AND ROLL. PATCH IT.** 是我们的工作态度：组建 Crew、执行任务、检查过程、验证结果，并修复真正的问题。
 
-文档：[https://deepseek-harness.github.io/deepseek-harness/](https://deepseek-harness.github.io/deepseek-harness/)
+本仓库以独立的 RIOTWORK 产品身份分发 **DeepSeek Harness（`dsh`）** 运行时。RIOTWORK 并非 DeepSeek 官方产品，也与 DeepSeek 没有关联、赞助或背书关系。“DeepSeek Harness”仅用于准确说明底层运行时及其来源；原始代码、许可证、声明和商标仍归各自所有者所有。
+
+先阅读 [RIOTWORK 品牌契约](RIOTWORK_BRAND.md)，再查看 [运行时文档](https://deepseek-harness.github.io/deepseek-harness/)。RIOTWORK 相关工作请通过[本仓库 Issues](https://github.com/isrockfeel/dx/issues)反馈。
 
 ## 开发者预览
 
@@ -35,8 +37,8 @@ npx @deepseek-ai/dsh web
 如需从仓库源码运行：
 
 ```sh
-git clone https://github.com/deepseek-ai/deepseek-harness.git
-cd deepseek-harness
+git clone https://github.com/isrockfeel/dx.git
+cd dx
 pnpm install
 pnpm run build
 pnpm dsh web

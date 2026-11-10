@@ -1,0 +1,32 @@
+:root {
+  --vp-c-brand-1: #c83d31;
+  --vp-c-brand-2: #aa3027;
+  --vp-c-brand-3: #e45546;
+  --vp-c-brand-soft: rgb(200 61 49 / 14%);
+  --vp-c-bg: #f4eee2;
+  --vp-c-bg-alt: #ebe4d7;
+  --vp-c-bg-elv: #fbf8f1;
+  --vp-c-text-1: #1c1a17;
+  --vp-c-text-2: #4d4942;
+  --vp-c-divider: rgb(28 26 23 / 16%);
+}
+
+.dark {
+  --vp-c-brand-1: #f16b5d;
+  --vp-c-brand-2: #ff8576;
+  --vp-c-brand-3: #d94b3e;
+  --vp-c-brand-soft: rgb(241 107 93 / 16%);
+  --vp-c-bg: #121211;
+  --vp-c-bg-alt: #191816;
+  --vp-c-bg-elv: #22201d;
+  --vp-c-text-1: #f4eee2;
+  --vp-c-text-2: #bbb3a5;
+  --vp-c-divider: rgb(244 238 226 / 14%);
+}
+
+.riotwork-tag {
+  border-radius: 2px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

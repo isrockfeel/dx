@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="348" height="48" viewBox="0 0 348 48" fill="none" role="img" aria-labelledby="title">
+  <title id="title">RIOTWORK — SKANG AND ROLL. PATCH IT.</title>
+  <g transform="translate(1 2)">
+    <path d="M7 2H34L31 9L39 15L35 42H5L8 34L1 27L7 2Z" fill="#E94E3D" stroke="#181715" stroke-width="2" stroke-linejoin="bevel"/>
+    <path d="M24 7L12 25H22L18 38L31 19H22L28 7H24Z" fill="#F4EDDF"/>
+    <path d="M7 5L11 5M29 39L33 39" stroke="#F4EDDF" stroke-width="1.6" stroke-linecap="square"/>
+  </g>
+  <text x="48" y="34" fill="currentColor" font-family="Arial Black, Impact, sans-serif" font-size="31" font-weight="900" letter-spacing="-1.35">RIOTWORK</text>
+  <path d="M255 8H341V14H255Z" fill="#D9EC46"/>
+  <text x="259" y="13" fill="#181715" font-family="Arial, sans-serif" font-size="6.5" font-weight="900" letter-spacing="1.25">PATCH IT.</text>
+</svg>

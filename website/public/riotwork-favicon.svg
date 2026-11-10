@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="title">
+  <title id="title">RIOTWORK patch mark</title>
+  <path d="M14 5H51L48 15L57 23L52 58H12L15 48L7 40L14 5Z" fill="#E94E3D" stroke="#181715" stroke-width="4" stroke-linejoin="bevel"/>
+  <path d="M37 12L19 36H31L26 53L48 27H35L43 12H37Z" fill="#F4EDDF" stroke="#181715" stroke-width="1.7" stroke-linejoin="miter"/>
+  <path d="M13 10L19 10M46 53L51 53" stroke="#181715" stroke-width="2" stroke-linecap="square"/>
+</svg>

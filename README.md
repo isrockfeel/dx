@@ -1,12 +1,14 @@
-# DeepSeek Harness
+# RIOTWORK — SKANG AND ROLL. PATCH IT.
 
 English | [中文](README.zh.md)
 
-DeepSeek Harness (`dsh`) is an open-source agent harness developed by [DeepSeek AI](https://deepseek.com).
+**RIOTWORK** is an independent, punk-rock AI agent engineering environment: less dashboard theatre, more verified software patches.
 
-It is built on an **everything-is-a-plugin** architecture and powered by [Cordis](https://github.com/cordiverse/cordis), whose design is described in [_A Programming Paradigm for Spatiotemporal Composability_](https://arxiv.org/abs/2608.25512).
+**SKANG AND ROLL. PATCH IT.** is the attitude: assemble a crew, run a mission, inspect the work, test the result, and fix what is broken.
 
-Documentation: [https://deepseek-harness.github.io/deepseek-harness/](https://deepseek-harness.github.io/deepseek-harness/)
+This repository presents the **DeepSeek Harness (`dsh`)** runtime under an independent RIOTWORK product identity. RIOTWORK is not an official DeepSeek product and is not affiliated with, sponsored by, or endorsed by DeepSeek. “DeepSeek Harness” is used only to accurately describe the underlying runtime and its provenance; original code, license, notices, and trademarks remain with their respective owners.
+
+Start with the [RIOTWORK brand contract](RIOTWORK_BRAND.md), then explore the [runtime documentation](https://deepseek-harness.github.io/deepseek-harness/). For RIOTWORK-specific work, use [this repository’s issues](https://github.com/isrockfeel/dx/issues).
 
 ## Developer preview
 
@@ -31,8 +33,8 @@ The command starts the Web UI at `http://127.0.0.1:3080` by default and opens it
 To run from a repository checkout:
 
 ```sh
-git clone https://github.com/deepseek-ai/deepseek-harness.git
-cd deepseek-harness
+git clone https://github.com/isrockfeel/dx.git
+cd dx
 pnpm install
 pnpm run build
 pnpm dsh web
