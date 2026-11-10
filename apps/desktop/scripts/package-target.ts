@@ -378,6 +378,7 @@ async function main(): Promise<void> {
   try {
     await packagingStep(run.directory, 'configuration', async () => { validateDesktopPackageEnvironment(environment, target, invocation) }, secrets)
     await packagingStep(run.directory, 'toolchain', () => requireDesktopToolchain(target.platform, environment), secrets)
+    await packagingStep(run.directory, 'desktop-brand-assets', () => runPnpm(['run', 'render:icons'], environment, APP_ROOT, run), secrets)
     if (target.platform === 'darwin') {
       const settings = resolveMacOSPackageSettings(environment)
       recordPackagingEvent(run.directory, { type: 'macos-settings', packConcurrency: settings.packConcurrency, zipCompressionLevel: settings.zipCompressionLevel,
@@ -402,7 +403,7 @@ async function main(): Promise<void> {
   if (success && target.platform === 'darwin' && !invocation.directory && !invocation.prepareOnly) {
     const paths = desktopTargetBuildPaths(target.name, environment)
     const output = desktopArtifactOutput(paths, invocation)
-    const filename = `deepseek-harness-${buildVersion}-mac-${target.arch}${output.suffix}.dmg`
+    const filename = `riotwork-${buildVersion}-mac-${target.arch}${output.suffix}.dmg`
     console.log(`DMG: ${join(output.directory, filename)}`)
   }
 }
