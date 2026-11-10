@@ -341,3 +341,155 @@ body {
 .actions .welcome-loading { color: inherit; }
 
 .auth-waiting .copy-link:disabled { cursor: default; }
+
+
+/* RIOTWORK — SKANG AND ROLL. PATCH IT. */
+body {
+  --riot-ink: #171614;
+  --riot-paper: #f4eddf;
+  --riot-red: #c83d31;
+  --riot-red-hover: #a92f27;
+  --riot-acid: #d9ec46;
+  --dsw-alias-label-primary: var(--riot-ink);
+  --dsw-alias-label-secondary: #555148;
+  --dsw-alias-label-tertiary: #787267;
+  --dsw-alias-label-primary-inverted: var(--riot-paper);
+  --dsw-alias-brand-primary: var(--riot-red);
+  --dsw-alias-button-primary-hover: var(--riot-red-hover);
+  --dsw-alias-button-elevated-fill: #fffaf0;
+  --dsw-alias-button-floating-hover: #e9e0d1;
+  --dsw-alias-border-l2: rgb(23 22 20 / 20%);
+  --dsw-alias-border-l4: rgb(23 22 20 / 36%);
+  --dsw-alias-label-caption: #817b70;
+  --dsw-font-family-brand: 'Arial Narrow', 'Segoe UI', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --riot-ink: #f4eddf;
+    --riot-paper: #171614;
+    --riot-red: #f16b5d;
+    --riot-red-hover: #d94b3e;
+    --riot-acid: #d9ec46;
+    --dsw-alias-label-primary: #f4eddf;
+    --dsw-alias-label-secondary: #c2b9aa;
+    --dsw-alias-label-tertiary: #938b7d;
+    --dsw-alias-label-primary-inverted: #171614;
+    --dsw-alias-brand-primary: #f16b5d;
+    --dsw-alias-button-primary-hover: #d94b3e;
+    --dsw-alias-button-elevated-fill: #24221e;
+    --dsw-alias-button-floating-hover: #302c26;
+    --dsw-alias-border-l2: rgb(244 237 223 / 19%);
+    --dsw-alias-border-l4: rgb(244 237 223 / 32%);
+    --dsw-alias-label-caption: #938b7d;
+  }
+}
+#root {
+  position: relative;
+  background:
+    radial-gradient(circle at 1px 1px, rgb(23 22 20 / 8%) 1px, transparent 1.4px) 0 0 / 9px 9px,
+    var(--welcome-tint);
+}
+@media (prefers-color-scheme: dark) {
+  #root {
+    background:
+      radial-gradient(circle at 1px 1px, rgb(244 237 223 / 8%) 1px, transparent 1.4px) 0 0 / 9px 9px,
+      var(--welcome-tint);
+  }
+}
+.titlebar { position: relative; }
+.titlebar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  height: 5px;
+  pointer-events: none;
+  background: repeating-linear-gradient(90deg,
+    var(--riot-red) 0 12px,
+    transparent 12px 18px,
+    var(--riot-acid) 18px 30px,
+    transparent 30px 36px);
+  opacity: 0.9;
+}
+.welcome { padding-top: 20px; }
+.tagline {
+  max-width: min(720px, 100%);
+  white-space: normal;
+  font-size: clamp(20px, 3vw, 28px);
+  line-height: 1.16;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+.tagline h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 4px;
+}
+.tagline em {
+  color: var(--dsw-alias-brand-primary);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+#welcome-description {
+  margin-top: 13px;
+  color: var(--dsw-alias-label-secondary);
+  font-family: var(--dsw-font-family);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.brand { object-fit: contain; }
+.actions { gap: 12px; }
+.actions button {
+  border-radius: 5px;
+  font-weight: 500;
+  transition:
+    background-color var(--ds-transition-duration) var(--ds-ease-in-out),
+    border-color var(--ds-transition-duration) var(--ds-ease-in-out),
+    opacity var(--ds-transition-duration) var(--ds-ease-in-out),
+    color var(--ds-transition-duration-slow) var(--ds-ease-in-out),
+    transform var(--ds-transition-duration) var(--ds-ease-in-out);
+}
+.primary {
+  border-color: var(--riot-ink);
+  background: var(--riot-red);
+  color: var(--riot-paper);
+  box-shadow: 3px 3px 0 var(--riot-ink);
+}
+.primary:hover:not(:disabled) {
+  background: var(--riot-red-hover);
+  transform: translate(-1px, -1px);
+}
+.actions .secondary {
+  border-color: var(--dsw-alias-border-l4);
+  border-radius: 5px;
+  background: var(--dsw-alias-button-elevated-fill);
+}
+.actions .secondary:hover:not(:disabled) {
+  background: var(--dsw-alias-button-floating-hover);
+}
+.actions .back { font-weight: 500; }
+.key-heading h1 { font-weight: 500; letter-spacing: 0; }
+.key-heading p { font-weight: 400; letter-spacing: 0; }
+.key-field input {
+  border-radius: 5px;
+  background: var(--dsw-alias-button-elevated-fill);
+  font-family: var(--dsw-font-family);
+}
+.key-field input:focus {
+  border-color: var(--riot-red);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--riot-red) 18%, transparent);
+}
+.auth-waiting .copy-link { color: var(--dsw-alias-brand-primary); }
+@media (prefers-reduced-motion: reduce) {
+  .actions button { transform: none !important; }
+}

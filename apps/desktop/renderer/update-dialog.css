@@ -40,3 +40,33 @@ button[aria-busy="true"] { opacity: 1; display: flex; align-items: center; justi
 button[aria-busy="true"]::before { content: ""; width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: reload-spin 800ms linear infinite; }
 @keyframes reload-spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { button[aria-busy="true"]::before { animation: none; } }
+
+
+/* RIOTWORK dialog finish — keep the existing native dialog lifecycle and tokens. */
+:root {
+  --riotwork-accent: #c83d31;
+  --riotwork-paper: #f4eddf;
+  --riotwork-ink: #171614;
+}
+body:not([data-ds-dark-theme]) main {
+  border: 1px solid rgb(23 22 20 / 18%);
+  border-radius: 14px;
+  background: #f4eddf;
+}
+body[data-ds-dark-theme] main {
+  border: 1px solid rgb(244 237 223 / 18%);
+  border-radius: 14px;
+  background: #1d1b18;
+}
+h1 { font-weight: 500; letter-spacing: 0.01em; }
+button { border-radius: 5px; }
+.primary {
+  background: var(--riotwork-accent);
+  color: var(--riotwork-paper);
+}
+.primary:hover:not(:disabled) { background: #a92f27; }
+button:focus-visible, summary:focus-visible, pre:focus-visible {
+  outline-color: var(--riotwork-accent);
+}
+body[data-ds-dark-theme] .primary { background: #f16b5d; color: #171614; }
+body[data-ds-dark-theme] .primary:hover:not(:disabled) { background: #d94b3e; }
