@@ -1,14 +1,18 @@
-/** RIOTWORK occupants for the shared sidebar brand slots. */
+/** RIOTWORK brand occupants and semantic palette for the shared client workspace. */
 import type { Context as ClientContext } from '@deepseek-ai/cordis'
 import type {} from '@deepseek-ai/dsh-client-ui-renderer/client'
 import type {} from '@deepseek-ai/dsh-client-ui-sidebar/client'
-import { RiotworkBrandMark, RiotworkBrandName } from './Brand.tsx'
+import type {} from '@deepseek-ai/dsh-client-ui-theme/client'
+import { RiotworkBrandMark, RiotworkBrandName, RIOTWORK_THEME_TOKENS } from './Brand.tsx'
 
-/** Required service: the UI slot registry. */
-export const inject = ['slots']
+/** Required services: the UI slot registry and reversible theme runtime. */
+export const inject = ['slots', 'theme']
 
-/** Register the two independent brand occupants once the sidebar declares them. */
+const PLUGIN_ID = '@deepseek-ai/dsh-client-ui-brand-official'
+
+/** Register the brand mark, wordmark, and reversible semantic palette. */
 export function apply(ctx: ClientContext): void {
+  ctx.effect(() => ctx.theme.overrideTokens(PLUGIN_ID, RIOTWORK_THEME_TOKENS), 'RIOTWORK workspace palette')
   ctx.slots.inject('sidebar.brand.mark', () =>
     ctx.slots.inject('sidebar.brand.name', function* () {
       yield ctx.slots.register({ name: 'sidebar.brand.mark' }, RiotworkBrandMark)

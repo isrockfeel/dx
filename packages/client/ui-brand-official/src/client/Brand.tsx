@@ -1,5 +1,27 @@
 import type { SidebarBrandMarkOwnerProps } from '@deepseek-ai/dsh-client-ui-sidebar/client'
 
+/** Light/dark palette used by the RIOTWORK workspace; semantic state colors remain untouched. */
+export const RIOTWORK_THEME_TOKENS = {
+  '--dsw-alias-bg-base': { light: '#F4EDDF', dark: '#151411' },
+  '--dsw-alias-bg-layer-1': { light: '#FBF7EE', dark: '#1D1A17' },
+  '--dsw-alias-bg-layer-2': { light: '#EEE6D8', dark: '#25221D' },
+  '--dsw-alias-bg-layer-3': { light: '#E4DACA', dark: '#2D2922' },
+  '--dsw-alias-bg-overlay': { light: '#FCF9F2', dark: '#332E26' },
+  '--dsw-alias-border-l1': { light: 'rgb(23 22 20 / 8%)', dark: 'rgb(244 237 223 / 8%)' },
+  '--dsw-alias-border-l2': { light: 'rgb(23 22 20 / 16%)', dark: 'rgb(244 237 223 / 16%)' },
+  '--dsw-alias-brand-primary': { light: '#C83D31', dark: '#F16B5D' },
+  '--dsw-alias-brand-primary-invert': { light: '#F4EDDF', dark: '#171614' },
+  '--dsw-alias-brand-text': { light: '#A92F27', dark: '#FF897A' },
+  '--dsw-alias-button-primary-fill': { light: '#C83D31', dark: '#F16B5D' },
+  '--dsw-alias-button-primary-hover': { light: '#A92F27', dark: '#D94B3E' },
+  '--dsw-alias-label-primary': { light: '#171614', dark: '#F4EDDF' },
+  '--dsw-alias-label-secondary': { light: '#5B554B', dark: '#C9C0B1' },
+  '--dsw-alias-label-primary-inverted': { light: '#F4EDDF', dark: '#171614' },
+  '--dsw-alias-link': { light: '#B83228', dark: '#FF897A' },
+  '--dsw-alias-interactive-bg-hover': { light: 'rgb(200 61 49 / 8%)', dark: 'rgb(241 107 93 / 12%)' },
+  '--dsw-specific-sidebar-fill': { light: '#EDE5D7', dark: '#1B1916' },
+} as const
+
 /** Render the RIOTWORK patch mark in the sidebar's host-supplied icon slot. */
 export function RiotworkBrandMark({ size }: SidebarBrandMarkOwnerProps) {
   return (
