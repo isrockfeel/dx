@@ -1,6 +1,6 @@
 {
   "name": "@deepseek-ai/dsh-client-ui-brand-official",
-  "description": "RIOTWORK sidebar brand artwork for the shared dsh client",
+  "description": "RIOTWORK sidebar identity and semantic theme palette for the shared dsh client",
   "version": "0.2.2-rc.1",
   "publishConfig": {
     "access": "public"
