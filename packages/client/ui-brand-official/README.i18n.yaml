@@ -3,44 +3,32 @@
 # After editing either side, bring the other along and re-record with:
 #   pnpm run verify-translation-pairing --write packages/client/ui-brand-official/README.md
 /:
-  en: a46a90b8cedd5c45
-  zh: 9b4f0d5fd9ffa945
+  en: b9f6ef406b918969
+  zh: 72bd64022c556662
 /deepseek-ai-dsh-client-ui-brand-official:
   en: 7cee1be833cea807
   zh: 9953e1b38cb23d34
 /deepseek-ai-dsh-client-ui-brand-official/summary:
-  en: 784b8216e88b0578
-  zh: 70165dea21d9a2ab
-/deepseek-ai-dsh-client-ui-brand-official/table-of-contents:
-  en: d152484eb41ac6b4
-  zh: 09388d293f9be9cb
+  en: f356fdb5e201e436
+  zh: 6fe102e7bbb63eec
 /deepseek-ai-dsh-client-ui-brand-official/use-this-package:
-  en: 8144a213ca978516
-  zh: 43dfefbd708d87bf
-/deepseek-ai-dsh-client-ui-brand-official/use-this-package/choosing-the-profile:
-  en: 876e7a0e21eaa396
-  zh: 596fcdec565e3eae
-/deepseek-ai-dsh-client-ui-brand-official/use-this-package/home-feedback:
-  en: f79f52c71a3d1491
-  zh: bda67c8b4050316a
-/deepseek-ai-dsh-client-ui-brand-official/use-this-package/replacing-the-brand:
-  en: 3fd4b315b27cfa23
-  zh: 8f76a10d642a5811
-/deepseek-ai-dsh-client-ui-brand-official/understand-the-implementation:
-  en: 4b59ceb74b5c9d1e
-  zh: c22bcc7d7344fe12
-/deepseek-ai-dsh-client-ui-brand-official/further-exploration:
-  en: 268cb9edf0c7d2f0
-  zh: 9b75285a61b44008
+  en: 64bcec9238b1c6dc
+  zh: 3c98cc8dd58a7caa
+/deepseek-ai-dsh-client-ui-brand-official/use-this-package/brand-slots:
+  en: fd6d8b395f10094a
+  zh: e48637d5ae7b808b
+/deepseek-ai-dsh-client-ui-brand-official/use-this-package/theme-palette:
+  en: bf93cdbeb56968a1
+  zh: d61ad1c0e21c131f
+/deepseek-ai-dsh-client-ui-brand-official/use-this-package/runtime-behavior:
+  en: 264c40055961eaac
+  zh: 105a967bff6c7518
+/deepseek-ai-dsh-client-ui-brand-official/implementation:
+  en: 02249408eba84724
+  zh: 99232f9ff89b2338
 /deepseek-ai-dsh-client-ui-brand-official/model-experience:
-  en: 618008c7641070e7
-  zh: 7233febb4d92ccfb
-/deepseek-ai-dsh-client-ui-brand-official/model-experience/kv-cache-effect:
-  en: ca75c51c89c2c9b0
-  zh: f57cc48a1b5cbfa9
+  en: 52ee98462b2bd106
+  zh: ea89b85106a79602
 /deepseek-ai-dsh-client-ui-brand-official/known-limitations-and-deferred-work:
-  en: b8f0ff2ff02bc0be
-  zh: 8f52f9dee0225fad
-/deepseek-ai-dsh-client-ui-brand-official/known-limitations-and-deferred-work/dev-note:
-  en: e67f633dc6fe7773
-  zh: 3bb0c20c93f16f98
+  en: 8cd9e94314130b2d
+  zh: 030c9d3c52c811d3
