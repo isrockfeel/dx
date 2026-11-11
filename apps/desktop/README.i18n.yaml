@@ -4,13 +4,13 @@
 #   pnpm run verify-translation-pairing --write apps/desktop/README.md
 /:
   en: 802208c69b207838
-  zh: a0a1a18c07621393
+  zh: bb6bff993ef4ba86
 /riotwork-desktop:
   en: 623ea0c8b3c65710
   zh: 74e10177ca4f1280
 /riotwork-desktop/summary:
   en: 48636fbd3ab3234d
-  zh: e85993d8852b6cab
+  zh: c75736539068e949
 /riotwork-desktop/table-of-contents:
   en: 127ea90553cb6af7
   zh: 7b1c5aec8558c684
@@ -22,13 +22,13 @@
   zh: 2acb5c5d7d1917e2
 /riotwork-desktop/closing-the-window-and-quitting:
   en: d6dc07ff3e21653d
-  zh: 20878b24155ed1b2
+  zh: fa3ed5abc6542cfb
 /riotwork-desktop/key-technical-decisions:
   en: 150314f13e16745e
   zh: 4bf2122459412f6a
 /riotwork-desktop/key-technical-decisions/bundled-workspace-dependencies:
-  en: b6d1c97b3c9c7cdf
-  zh: a94f2f0de10d45e8
+  en: 3368ff9b955ada69
+  zh: e9209ef6ad4fd305
 /riotwork-desktop/bundled-command-runtime:
   en: 372297005b57a08b
   zh: 074a635ac17e4362
