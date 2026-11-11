@@ -30,5 +30,5 @@ export async function renderDesktopIcons(): Promise<void> {
 
 if (process.argv[1] !== undefined && import.meta.filename === process.argv[1]) {
   await renderDesktopIcons()
-  process.stdout.write('desktop icons: RIOTWORK PNG and ICO assets generated\\n')
+  process.stdout.write('desktop icons: RIOTWORK PNG and ICO assets generated\n')
 }
