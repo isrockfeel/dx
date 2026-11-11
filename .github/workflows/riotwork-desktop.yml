@@ -44,7 +44,7 @@ jobs:
   desktop-build:
     name: Desktop build and locale contracts
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 45
     env:
       DSH_TELEMETRY_DISABLED: '1'
     steps:
@@ -66,6 +66,9 @@ jobs:
 
       - name: Install immutable workspace
         run: pnpm install --frozen-lockfile
+
+      - name: Build shared runtime artifacts required by Desktop
+        run: pnpm run build:artifacts
 
       - name: Build RIOTWORK Desktop
         run: pnpm run build:desktop
