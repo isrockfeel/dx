@@ -1,0 +1,86 @@
+name: RIOTWORK Desktop Gate
+
+on:
+  push:
+    branches: [dev]
+    paths:
+      - 'apps/desktop/**'
+      - 'packages/client/**'
+      - 'packages/host/**'
+      - 'packages/credentials/**'
+      - 'packages/api/**'
+      - 'scripts/**'
+      - 'docs/**'
+      - '.github/workflows/riotwork-desktop.yml'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - 'tsconfig*.json'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'apps/desktop/**'
+      - 'packages/client/**'
+      - 'packages/host/**'
+      - 'packages/credentials/**'
+      - 'packages/api/**'
+      - 'scripts/**'
+      - 'docs/**'
+      - '.github/workflows/riotwork-desktop.yml'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - 'tsconfig*.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: riotwork-desktop-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  desktop-build:
+    name: Desktop build and locale contracts
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      DSH_TELEMETRY_DISABLED: '1'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v5.0.0
+        with:
+          version: 11.28.5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24.9.0'
+          cache: pnpm
+
+      - name: Install immutable workspace
+        run: pnpm install --frozen-lockfile
+
+      - name: Build shared runtime artifacts required by Desktop
+        run: pnpm run build:artifacts
+
+      - name: Build RIOTWORK Desktop
+        run: pnpm run build:desktop
+
+      - name: Verify installer locale catalog
+        run: pnpm run verify-installer-locales
+
+      - name: Verify locale metadata
+        run: pnpm run verify-locale-metadata
+
+      - name: Verify client UI translations
+        run: pnpm run verify-client-ui-i18n
+
+      - name: Verify translation pairing
+        run: pnpm run verify-translation-pairing

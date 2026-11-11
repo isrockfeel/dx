@@ -16,6 +16,10 @@ DeepSeek Harness is in _developer preview_ and iterating rapidly. **THERE WILL B
 
 Review the [safety notice](SAFETY.md) before running the project.
 
+## RIOTWORK Desktop
+
+The native desktop application packages the shared workspace in an Electron shell. Its engineering reference and platform behavior are documented in [apps/desktop](apps/desktop/README.md); the [Desktop delivery contract](apps/desktop/RIOTWORK_DESKTOP_DELIVERY.md) defines the product experience, acceptance criteria, and release evidence required before calling a build ready.
+
 ## Run
 
 ### Run from `npm`
@@ -68,7 +72,7 @@ For agents, follow [AGENTS.md](AGENTS.md).
   author={DeepSeek-AI},
   year={2026},
   publisher={GitHub},
-  howpublished={\url{https://github.com/deepseek-ai/deepseek-harness}},
+  howpublished={\\url{https://github.com/deepseek-ai/deepseek-harness}},
 }
 ```
 
