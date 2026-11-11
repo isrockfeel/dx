@@ -1,5 +1,5 @@
 ---
-description: "Desktop 在原生应用中运行 Harness 工作区。本参考文档说明应用行为、开发与集成；打包、Windows 签名和发布指南分别维护构建与发布操作。"
+description: "RIOTWORK 是基于 dsh 运行时的原生桌面工作区。本参考文档说明应用行为、开发与集成；打包、Windows 签名和发布指南维护发布操作。"
 ---
 
 # RIOTWORK 桌面端
@@ -8,7 +8,7 @@ description: "Desktop 在原生应用中运行 Harness 工作区。本参考文�
 
 ## 概述
 
-Desktop 在原生应用中运行 Harness 工作区。本参考文档说明应用行为、开发与集成；打包、Windows 签名和发布指南分别维护构建与发布操作。
+RIOTWORK 桌面端通过 Electron 运行共享 dsh 工作区。RIOTWORK 是独立的产品身份；为保持运行时兼容和来源归属，dsh 包名、`dsh` 协议及现有数据目录保持稳定。本参考文档说明应用行为、开发与集成；打包、Windows 签名和发布指南维护发布操作。
 
 ## 目录
 
@@ -68,8 +68,6 @@ macOS 安装会创建 `/usr/local/bin/dsh`；目录权限需要时，系统会�
 <a id="closing-the-window-and-quitting"></a>
 
 ## 关闭窗口与退出
-
-RIOTWORK 桌面端通过 Electron 运行共享 dsh 工作区。RIOTWORK 是独立的产品身份；为保持运行时兼容和来源归属，dsh 包名、`dsh` 协议和现有数据目录保持稳定。
 
 关闭主窗口（macOS 的关闭按钮和 ⌘W；Windows 的 ×、Alt+F4 和任务栏"关闭窗口"）会隐藏窗口；Windows 首次隐藏前需要确认。页面和 Host 继续运行，任务不受影响，下次显示时仍是原来的文档，会话、草稿和滚动位置都保留；macOS 全屏窗口先退出全屏再隐藏。macOS 通过 Dock 图标、再次启动或 `dsh://open` 找回窗口，Windows 通过托盘找回。最小化行为不变。进入工作区前关闭欢迎窗口，Windows 上走退出流程，macOS 上应用留在 Dock 中且没有窗口。
 
